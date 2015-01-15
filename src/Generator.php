@@ -21,7 +21,7 @@ class Generator
 	/**
 	 * Generate validator annotations from existing validator classes
 	 */
-	public function convert()
+	public function generate()
 	{
 		$v = CValidator::$builtInValidators;
 		$template = <<<CODE
