@@ -1,6 +1,6 @@
 <?php
 
-namespace Maslosoft\AddendumValidatorGenerator
+namespace Maslosoft\AddendumValidatorGenerator;
 
 use CFileHelper;
 use CValidator;
@@ -18,6 +18,7 @@ use ZipArchive;
 
 class Generator
 {
+
 	/**
 	 * Generate validator annotations from existing validator classes
 	 */
@@ -63,5 +64,6 @@ CODE;
 			$code = sprintf($template, $classComment, $name, implode("\n", $fields));
 			file_put_contents("c:/temp/{$name}Annotation.php", $code);
 		}
-	} 
+	}
+
 }
